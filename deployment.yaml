@@ -226,7 +226,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: nwbclone.smoose.cloud
+  - host: odoo-nwb.smoose.cloud
     http:
       paths:
       - backend:
@@ -245,5 +245,5 @@ spec:
         pathType: ImplementationSpecific
   tls:
   - hosts:
-    - nwbclone.smoose.cloud
-    secretName: nwbclone-smoose-cloud-tls
+    - odoo-nwb.smoose.cloud
+    secretName: odoo-nwb-smoose-cloud-tls

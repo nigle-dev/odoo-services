@@ -226,7 +226,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: joydoo.smoose.cloud
+  - host: nwbclone.smoose.cloud
     http:
       paths:
       - backend:
@@ -245,5 +245,5 @@ spec:
         pathType: ImplementationSpecific
   tls:
   - hosts:
-    - joydoo.smoose.cloud
-    secretName: joydoo-smoose-cloud-tls
+    - nwbclone.smoose.cloud
+    secretName: nwbclone-smoose-cloud-tls

@@ -1,0 +1,7 @@
+resources:
+- odoo-deployment.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: smoosedev/odoo_nwb
+  newTag: 3f303f13db0849d35a60f1e12d185829

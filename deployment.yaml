@@ -140,7 +140,7 @@ spec:
         - name: WITHOUT_DEMO
           value: "false"
         image: smoosedev/odoo_nwb:3f303f13db0849d35a60f1e12d185829
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: odoo
         ports:
         - containerPort: 8069

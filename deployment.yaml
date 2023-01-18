@@ -114,7 +114,7 @@ spec:
       containers:
       - env:
         - name: ADDONS_PATH
-          value: /odoo/local-src,/odoo/external-src/server-tools,/odoo/src/addons
+          value: /odoo/local-src,/odoo/external-src,/odoo/src/addons
         - name: ADMIN_PASSWD
           value: admin
         - name: DB_NAME
@@ -139,7 +139,7 @@ spec:
           value: dev
         - name: WITHOUT_DEMO
           value: "false"
-        image: smoosedev/odoo_nwb:3f303f13db0849d35a60f1e12d185829
+        image: smoosedev/odoo_nwb:96e0c18a136fdd62
         imagePullPolicy: IfNotPresent
         name: odoo
         ports:

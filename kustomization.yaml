@@ -3,6 +3,6 @@ resources:
 
 images:
 - name: smoosedev/odoo_nwb
-  newTag: 93cfde658e21aaa8
+  newTag: bed9c9b49896d36d
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

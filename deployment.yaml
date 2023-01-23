@@ -119,7 +119,7 @@ spec:
           value: dev
         - name: WITHOUT_DEMO
           value: "false"
-        image: smoosedev/odoo_nwb:e48d6059bd37dfe2
+        image: smoosedev/odoo_nwb:93cfde658e21aaa8
         imagePullPolicy: IfNotPresent
         name: odoo
         ports:

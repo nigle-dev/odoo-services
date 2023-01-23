@@ -11,28 +11,8 @@ data:
               - "sh -c 'psql -c \"CREATE EXTENSION pg_trgm;\"'"
           addons:
             upgrade:
-              - sale
-              - account
-              - crm
-              - website
-              - stock
-              - purchase
-              - project
-              - website_sale
-              - mass_mailing
-              - hr_expense
-              - hr_recuitment
-              - website_event
-              - mail
-              - contacts
-              - calendar
-              - website_blog
-              - board
-              - website_hr_recruitment
-              - hr_contact
-              - payment_mollie
-              - membership
-              - website_membership
+              - nwb_base
+              - nwb_install
 kind: ConfigMap
 metadata:
   name: migration-config

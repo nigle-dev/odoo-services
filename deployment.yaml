@@ -119,6 +119,8 @@ spec:
           value: dev
         - name: WITHOUT_DEMO
           value: "false"
+        - name: KWKHTMLTOPDF_SERVER_URL
+          value: "https:// kwkhtmltopdf.smoose.cloud"
         image: smoosedev/odoo_nwb:93cfde658e21aaa8
         imagePullPolicy: IfNotPresent
         name: odoo

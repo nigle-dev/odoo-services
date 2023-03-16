@@ -12,7 +12,11 @@ data:
           addons:
             upgrade:
               - community_org_base 
-              - community_org_base_install
+      versions:
+        - versions: 0.0.1
+          addons:
+            upgrade:
+              - community_org_install
 kind: ConfigMap
 metadata:
   name: migration-config

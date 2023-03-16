@@ -12,7 +12,6 @@ data:
           addons:
             upgrade:
               - community_org_base 
-      versions:
         - version: 0.0.1
           addons:
             upgrade:

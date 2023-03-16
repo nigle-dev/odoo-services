@@ -202,6 +202,7 @@ kind: Ingress
 metadata:
   annotations:
     cert-manager.io/issuer: letsencrypt-production
+    cert-manager.io/issuer-kind: ClusterIssuer
   labels:
     app.kubernetes.io/instance: odoo
     app.kubernetes.io/name: odoo

@@ -210,7 +210,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: odoo-community.smoose.cloud
+  - host: odoo-community.k8s.onestein.eu
     http:
       paths:
       - backend:
@@ -229,5 +229,5 @@ spec:
         pathType: ImplementationSpecific
   tls:
   - hosts:
-    - odoo-community.smoose.cloud
-    secretName: odoo-community-smoose-cloud-tls
+    - odoo-community.k8s.onestein.eu
+    secretName: odoo-community.k8s.onestein.eu-tls

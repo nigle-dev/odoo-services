@@ -11,7 +11,11 @@ data:
               - "sh -c 'psql -c \"CREATE EXTENSION pg_trgm;\"'"
           addons:
             upgrade:
-              - community_org_base 
+              - community_org_base
+        - version: 0.0.1
+          addons:
+            upgrade:
+              - community_org_install
 kind: ConfigMap
 metadata:
   name: migration-config

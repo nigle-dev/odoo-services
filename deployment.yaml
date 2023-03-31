@@ -24,6 +24,10 @@ data:
           addons:
             upgrade:
               - all
+        - version: 0.0.4
+          addons:
+            upgrade:
+              - community_org_install
 kind: ConfigMap
 metadata:
   name: migration-config

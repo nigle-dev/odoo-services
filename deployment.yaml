@@ -20,6 +20,10 @@ data:
           addons:
             upgrade:
               - all
+        - version: 0.0.3
+          addons:
+            upgrade:
+              - all
 kind: ConfigMap
 metadata:
   name: migration-config

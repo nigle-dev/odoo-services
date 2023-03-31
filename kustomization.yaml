@@ -3,6 +3,6 @@ resources:
 
 images:
 - name: smoosedev/odoo_community
-  newTag: 478e519e
+  newTag: 76749b6c
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

@@ -129,7 +129,7 @@ spec:
         - name: MARABUNTA_MODE
           value: demo
         - name: MIGRATE
-          value: false
+          value: "false"
         - name: PATH
           value: /usr/local/bin:/odoo/odoo-bin:/odoo/.local/bin:/home/nils/.local/bin:/home/nils/.krew/bin:/home/nils/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
         - name: RUNNING_ENV

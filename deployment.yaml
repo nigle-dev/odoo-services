@@ -27,7 +27,7 @@ data:
         - version: 0.0.4
           addons:
             upgrade:
-              - community_org_install
+              - website_membership_registration
 kind: ConfigMap
 metadata:
   name: migration-config

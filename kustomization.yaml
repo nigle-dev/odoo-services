@@ -2,7 +2,7 @@ resources:
 - deployment.yaml
 
 images:
-- name: smoosedev/odoo_community
-  newTag: 9e483ac2
+- name: smoosedev/odoo_services
+  newTag: f789c95b
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

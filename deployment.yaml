@@ -11,23 +11,7 @@ data:
               - "sh -c 'psql -c \"CREATE EXTENSION pg_trgm;\"'"
           addons:
             upgrade:
-              - community_org_base
-        - version: 0.0.1
-          addons:
-            upgrade:
-              - community_org_install
-        - version: 0.0.2
-          addons:
-            upgrade:
-              - all
-        - version: 0.0.3
-          addons:
-            upgrade:
-              - all
-        - version: 0.0.4
-          addons:
-            upgrade:
-              - website_membership_registration
+              - services_org_install 
 kind: ConfigMap
 metadata:
   name: migration-config
@@ -136,7 +120,7 @@ spec:
           value: dev
         - name: WITHOUT_DEMO
           value: "false"
-        image: smoosedev/odoo_community:ada4c273
+        image: smoosedev/odoo_services:ada4c273
         imagePullPolicy: IfNotPresent
         name: odoo
         ports:
@@ -224,7 +208,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: odoo-community.k8s.onestein.eu
+  - host: odoo-services.k8s.onestein.eu
     http:
       paths:
       - backend:
@@ -243,5 +227,5 @@ spec:
         pathType: ImplementationSpecific
   tls:
   - hosts:
-    - odoo-community.k8s.onestein.eu
-    secretName: odoo-community.k8s.onestein.eu-tls
+    - odoo-services.k8s.onestein.eu
+    secretName: odoo-services.k8s.onestein.eu-tls
